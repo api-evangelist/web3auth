@@ -1,6 +1,8 @@
 # Web3Auth (web3auth)
 
-Web3Auth (by Torus Labs) provides MPC-based wallet auth, embedded wallets, and key management for Web3 apps. Supports social login and seed-phrase-less onboarding across EVM and non-EVM chains.
+Web3Auth (now MetaMask Embedded Wallets) is a non-custodial threshold-key wallet and authentication platform. It provides client SDKs (Web, React, Vue, iOS, Android, Flutter, React Native, Unity, Unreal, Node.js) and a backend Auth Network for OAuth-anchored MPC key shares. Public HTTP surface is limited and SDK-first.
+
+Honest skip: Web3Auth is SDK-first. The dashboard / verifier REST endpoints are not published with a public OpenAPI spec.
 
 **URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/web3auth/refs/heads/main/apis.yml)
 
@@ -9,8 +11,12 @@ Web3Auth (by Torus Labs) provides MPC-based wallet auth, embedded wallets, and k
 ## Type
 - **x-type:** company
 
-## Tags:
- - Web3, Wallet, Auth, MPC, Embedded
+## APIs
+- **Web3Auth Auth Network** - Threshold-key Auth Network nodes that issue and recover key shares anchored to OAuth/social/passkey identity providers.
+- **Web3Auth Dashboard / Verifier API** - Backend REST endpoints used by the Web3Auth dashboard to manage projects, verifiers, custom auth, and analytics.
+
+## Tags
+ - Web3, Wallets, Authentication, MPC, Embedded Wallets
 
 ## Timestamps
 - **Created:** 2026-05-08
@@ -18,9 +24,9 @@ Web3Auth (by Torus Labs) provides MPC-based wallet auth, embedded wallets, and k
 
 ## Common Properties
 - [Website](https://web3auth.io/)
-- [Plans](plans/web3auth-plans-pricing.yml) — placeholder, pipeline reconciles later
-- [RateLimits](rate-limits/web3auth-rate-limits.yml) — placeholder
-- [FinOps](finops/web3auth-finops.yml) — FOCUS-aligned placeholder
+- [Plans](plans/web3auth-plans-pricing.yml)
+- [RateLimits](rate-limits/web3auth-rate-limits.yml)
+- [FinOps](finops/web3auth-finops.yml)
 
 ## Maintainers
 **FN:** Kin Lane

@@ -5,37 +5,104 @@ provider: Web3Auth
 providerId: web3auth
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: true
 tags:
 - Web3
-- Wallet
-- Auth
+- Wallets
+- Authentication
 - MPC
-- Embedded
+- Embedded Wallets
 - Plans
-description: Placeholder plans/pricing artifact for Web3Auth. Replace with real published pricing once
-  the pipeline researches the provider's plans page.
-notes: Initial scaffold — plans/pricing have not yet been reconciled against the provider's documentation.
+description: Web3Auth is sold by monthly active wallets (MAW). Higher tiers unlock
+  white-label, custom domains, advanced auth providers, and SLAs.
+notes: Verify against web3auth.io/pricing.
 sources:
-- https://web3auth.io/
+- https://web3auth.io/pricing.html
 plans:
-- id: web3auth-default
-  name: To Be Reconciled
-  type: enterprise
-  description: Initial scaffold; replace with provider plan tiers once pricing is reconciled.
+- id: web3auth-base
+  name: Base
+  type: free
+  description: Free plan for development with included MAW.
   entries:
-  - label: API Access
-    name: api_access
-    type: flat
-    metric: varies
-    limit: -1
-    timeFrame: usage
+  - label: Included MAW
+    name: maw
+    type: included
+    metric: wallets
+    limit: 1000
+    timeFrame: month
     geo: global
     unit: 1
-    price: see https://web3auth.io/
+    price: 0
     userMultiplied: false
   elements:
-  - name: Pending Reconciliation
+  - name: Public Auth Providers
+  - name: Community Support
+- id: web3auth-growth
+  name: Growth
+  type: paid
+  description: Production tier with higher MAW and custom verifiers.
+  entries:
+  - label: Monthly Subscription
+    name: monthly_subscription
+    type: flat
+    metric: subscription
+    limit: 1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: 199
+    userMultiplied: false
+  - label: Included MAW
+    name: included_maw
+    type: included
+    metric: wallets
+    limit: 10000
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: 0
+    userMultiplied: false
+  elements:
+  - name: Custom Verifiers
+  - name: Email Support
+  - name: White-Label
+- id: web3auth-scale
+  name: Scale
+  type: paid
+  description: Higher-volume tier.
+  entries:
+  - label: Monthly Subscription
+    name: monthly_subscription
+    type: flat
+    metric: subscription
+    limit: 1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: 999
+    userMultiplied: false
+  elements:
+  - name: Higher MAW
+  - name: Priority Support
+- id: web3auth-enterprise
+  name: Enterprise
+  type: enterprise
+  description: Custom enterprise contracts with SLAs and dedicated nodes.
+  entries:
+  - label: Custom
+    name: custom
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: SLA
+  - name: Dedicated Nodes
+  - name: SOC 2
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

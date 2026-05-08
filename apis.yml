@@ -2,28 +2,55 @@ aid: web3auth
 url: https://raw.githubusercontent.com/api-evangelist/web3auth/refs/heads/main/apis.yml
 name: Web3Auth
 x-type: company
-description: >-
-  Web3Auth (by Torus Labs) provides MPC-based wallet auth, embedded wallets, and key management for Web3 apps. Supports social login and seed-phrase-less onboarding across EVM and non-EVM chains.
+description: Web3Auth (now MetaMask Embedded Wallets) is a non-custodial threshold-key
+  wallet and authentication platform. It provides client SDKs (Web, React, Vue, iOS,
+  Android, Flutter, React Native, Unity, Unreal, Node.js) and a backend Auth Network
+  for OAuth-anchored MPC key shares. Public HTTP surface is limited and SDK-first.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Web3
-  - Wallet
-  - Auth
-  - MPC
-  - Embedded
+- Web3
+- Wallets
+- Authentication
+- MPC
+- Embedded Wallets
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+- aid: web3auth:auth-network
+  name: Web3Auth Auth Network
+  description: Threshold-key Auth Network nodes that issue and recover key shares
+    anchored to OAuth/social/passkey identity providers. Accessed primarily through
+    the Web3Auth client SDK rather than as a developer-facing REST API.
+  humanURL: https://web3auth.io/docs/auth-provider-setup/
+  baseURL: n/a (network endpoint, SDK-mediated)
+  tags:
+  - Network
+  - MPC
+  properties:
+  - type: Documentation
+    url: https://web3auth.io/docs/
+- aid: web3auth:dashboard-api
+  name: Web3Auth Dashboard / Verifier API
+  description: Backend REST endpoints used by the Web3Auth dashboard to manage projects,
+    verifiers, custom auth, and analytics. Available to project administrators.
+  humanURL: https://web3auth.io/docs/dashboard/
+  baseURL: https://api.web3auth.io
+  tags:
+  - REST
+  - Admin
+  properties:
+  - type: Documentation
+    url: https://web3auth.io/docs/dashboard/
 common:
-  - type: Website
-    url: https://web3auth.io/
-  - type: Plans
-    url: plans/web3auth-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/web3auth-rate-limits.yml
-  - type: FinOps
-    url: finops/web3auth-finops.yml
+- type: Website
+  url: https://web3auth.io/
+- type: Plans
+  url: plans/web3auth-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/web3auth-rate-limits.yml
+- type: FinOps
+  url: finops/web3auth-finops.yml
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
