@@ -1,0 +1,29 @@
+aid: web3auth
+url: https://raw.githubusercontent.com/api-evangelist/web3auth/refs/heads/main/apis.yml
+name: Web3Auth
+x-type: company
+description: >-
+  Web3Auth (by Torus Labs) provides MPC-based wallet auth, embedded wallets, and key management for Web3 apps. Supports social login and seed-phrase-less onboarding across EVM and non-EVM chains.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Web3
+  - Wallet
+  - Auth
+  - MPC
+  - Embedded
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://web3auth.io/
+  - type: Plans
+    url: plans/web3auth-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/web3auth-rate-limits.yml
+  - type: FinOps
+    url: finops/web3auth-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
