@@ -1,7 +1,7 @@
 aid: web3auth
 url: https://raw.githubusercontent.com/api-evangelist/web3auth/refs/heads/main/apis.yml
 name: Web3Auth
-x-type: company
+kind: company
 description: Web3Auth (now MetaMask Embedded Wallets) is a non-custodial threshold-key
   wallet and authentication platform. It provides client SDKs (Web, React, Vue, iOS,
   Android, Flutter, React Native, Unity, Unreal, Node.js) and a backend Auth Network
