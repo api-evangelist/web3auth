@@ -55,6 +55,8 @@ common:
     url: rate-limits/web3auth-rate-limits.yml
   - type: FinOps
     url: finops/web3auth-finops.yml
+  - type: LLMsTxt
+    url: https://web3auth.io/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
