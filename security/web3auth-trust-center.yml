@@ -1,0 +1,14 @@
+generated: '2026-07-11'
+method: searched
+probe: true
+source: https://trust.web3auth.io/
+url: https://trust.web3auth.io/
+certifications:
+- SOC 2
+- GDPR
+evidence:
+- source: https://trust.web3auth.io/
+  keywords:
+  - soc 2
+  - trust center
+  - gdpr

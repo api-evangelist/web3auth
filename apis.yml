@@ -43,6 +43,10 @@ apis:
     - type: Documentation
       url: https://web3auth.io/docs/dashboard/
 common:
+  - type: TrustCenter
+    url: security/web3auth-trust-center.yml
+  - type: DomainSecurity
+    url: security/web3auth-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/web3auth
   - type: LinkedIn
@@ -57,6 +61,8 @@ common:
     url: finops/web3auth-finops.yml
   - type: LlmsText
     url: https://web3auth.io/llms.txt
+  - url: https://blog.web3auth.io/rss/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
