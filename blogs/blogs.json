@@ -1,0 +1,14 @@
+{
+  "repo": "web3auth",
+  "feeds": [
+    {
+      "source": "https://blog.web3auth.io/rss/",
+      "feed_url": "https://blog.web3auth.io/rss/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 18
+}
