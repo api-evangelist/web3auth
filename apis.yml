@@ -6,7 +6,19 @@ description: Web3Auth (now MetaMask Embedded Wallets) is a non-custodial thresho
   wallet and authentication platform. It provides client SDKs (Web, React, Vue, iOS,
   Android, Flutter, React Native, Unity, Unreal, Node.js) and a backend Auth Network
   for OAuth-anchored MPC key shares. Public HTTP surface is limited and SDK-first.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: paid
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Paid
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/web3auth.png
 tags:
   - Web3
   - Wallets
