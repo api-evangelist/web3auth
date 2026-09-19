@@ -48,6 +48,9 @@ apis:
     humanURL: https://web3auth.io/docs/auth-provider-setup/
     baseURL: n/a (network endpoint, SDK-mediated)
     tags:
+    - Networks
+    - MPC
+    tags_raw:
     - Network
     - MPC
     properties:
