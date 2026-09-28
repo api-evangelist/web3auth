@@ -16,14 +16,18 @@ deployment:
 tools_count: 5
 tools:
 - name: search_docs
-  description: ''
+  description: Search MetaMask Embedded Wallets documentation (Algolia) and example projects. Returns
+    doc page links with snippets and matching examples.
 - name: get_doc
-  description: ''
+  description: 'Fetch the full content of a MetaMask Embedded Wallets documentation page by URL. Sources:
+    Algolia, llms.txt, GitHub MDX.'
 - name: get_example
-  description: ''
+  description: Fetch complete source code of a Web3Auth integration example from GitHub.
 - name: get_sdk_reference
-  description: ''
+  description: Fetch SDK source code (types, interfaces, hooks) from open-source Web3Auth repos.
 - name: search_community
-  description: ''
+  description: Search or fetch posts from the MetaMask Embedded Wallets community forum (builder.metamask.io).
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
